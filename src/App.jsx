@@ -1,12 +1,11 @@
 import "./App.css";
+import Header from "./components/Header/Header.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-7xl font-bold text-center border border-grey-800">
-          Store
-        </h1>
+      <div className="bg-app-background bg-cover min-h-screen font-body">
+        <Header />
       </div>
     </>
   );

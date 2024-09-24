@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Nunito"],
+      },
+      backgroundImage: {
+        "app-background": "url('src/assets/background-img.png')",
+      },
+    },
   },
   plugins: [],
 };
