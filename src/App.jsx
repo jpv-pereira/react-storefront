@@ -14,7 +14,7 @@ function Logo({ src, alt }) {
 function App() {
   return (
     <>
-      <div>
+      <div className="custom-bg min-h-screen">
         <Logo src={ReactStoreLogo} alt="React Store Logo" />
         <Header />
       </div>

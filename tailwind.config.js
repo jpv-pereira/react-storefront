@@ -7,7 +7,7 @@ export default {
         body: ["Nunito"],
       },
       backgroundImage: {
-        "app-background": "url('src/assets/background-img.png')",
+        "app-background": "url('src/assets/background.jpg')",
       },
     },
   },
