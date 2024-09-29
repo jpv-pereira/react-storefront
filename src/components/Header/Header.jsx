@@ -6,9 +6,7 @@ function Header() {
       <header>
         <Divider />
         <div className="p-2 sm:p-3 space-x-8 flex justify-center">
-          <button className="text-2xl font-semibold tracking-wide text-gray-600 hover:text-black transition duration-300">
-            Shop
-          </button>
+          <button className="btn">Shop</button>
         </div>
         <Divider />
       </header>
