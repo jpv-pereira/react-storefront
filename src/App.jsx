@@ -11,25 +11,17 @@ function GetProducts() {
 }
 
 function App() {
+  const ProductCount = GetProducts();
+
   return (
     <>
       <div className="custom-bg min-h-screen">
         <Header />
         <div className="flex justify-center mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {Array.from({ length: ProductCount }).map((_, index) => (
+              <ProductCard key={index} />
+            ))}
           </div>
         </div>
       </div>
