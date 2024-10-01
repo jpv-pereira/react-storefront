@@ -2,16 +2,27 @@ import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import ProductCard from "./components/Product/ProductCard.jsx";
 import Products from "../public/products.json";
+import { useEffect } from "react";
+import { data } from "autoprefixer";
 
 /*className="bg-app-background bg-cover min-h-screen font-body" */
 
 // should return a product object later on
 function GetProducts() {
-  return Products.length;
+  const productsPath = "../public/products.json";
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch(productsPath)
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  return products;
 }
 
 function App() {
-  const ProductCount = GetProducts();
+  const products = GetProducts();
 
   return (
     <>
@@ -19,8 +30,8 @@ function App() {
         <Header />
         <div className="flex justify-center mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-            {Array.from({ length: ProductCount }).map((_, index) => (
-              <ProductCard key={index} />
+            {Array.from({ length: Products.length }).map((_, index) => (
+              <ProductCard key={index} product={products[index]} />
             ))}
           </div>
         </div>
