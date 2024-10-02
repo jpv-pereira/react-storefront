@@ -3,11 +3,7 @@ import Header from "./components/Header/Header.jsx";
 import ProductCard from "./components/Product/ProductCard.jsx";
 import Products from "../public/products.json";
 import { useEffect } from "react";
-import { data } from "autoprefixer";
 
-/*className="bg-app-background bg-cover min-h-screen font-body" */
-
-// should return a product object later on
 function GetProducts() {
   const productsPath = "../public/products.json";
   const [products, setProducts] = useState([]);
