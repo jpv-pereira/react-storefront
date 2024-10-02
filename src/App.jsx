@@ -1,11 +1,10 @@
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import ProductCard from "./components/Product/ProductCard.jsx";
-import Products from "../public/products.json";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function GetProducts() {
-  const productsPath = "../public/products.json";
+  const productsPath = "/public/products.json";
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -26,7 +25,7 @@ function App() {
         <Header />
         <div className="flex justify-center mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-            {Array.from({ length: Products.length }).map((_, index) => (
+            {Array.from({ length: products.length }).map((_, index) => (
               <ProductCard key={index} product={products[index]} />
             ))}
           </div>
