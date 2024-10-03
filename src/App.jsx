@@ -18,7 +18,6 @@ function GetProducts() {
 
 function App() {
   const products = GetProducts();
-
   return (
     <>
       <div className="custom-bg min-h-screen">
