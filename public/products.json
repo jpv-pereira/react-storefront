@@ -1,28 +1,28 @@
 [
   {
     "id": 1,
-    "name": "Vacuum Cleaner",
+    "productName": "Vacuum Cleaner",
     "description": "",
     "img": "https://youget.pt/171687-large_default/vertical-vacuum-cleaner-rowenta-rh6a35wo-.jpg",
     "price": 60
   },
   {
     "id": 2,
-    "name": "Football",
+    "productName": "Football",
     "description": "",
     "img": "https://t4.ftcdn.net/jpg/00/43/68/37/360_F_43683777_N8e1NeuTbO9mv23iHLSBRRrhuzl6h2ru.jpg",
     "price": 0
   },
   {
     "id": 3,
-    "name": "Greek Yogurt",
+    "productName": "Greek Yogurt",
     "description": "",
     "img": "https://cdn.jwplayer.com/v2/media/gMk28utp/poster.jpg?width=720",
     "price": 0
   },
   {
     "id": 4,
-    "name": "Shoes",
+    "productName": "Shoes",
     "description": "Everyone needs at least one, right?",
     "img": "https://papers.co/wallpaper/papers.co-af73-jordan-fly-wade-nike-shoe-art-35-3840x2160-4k-wallpaper.jpg",
     "price": 0
